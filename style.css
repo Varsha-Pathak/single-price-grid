@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    align-items: center;
+    background-color: hsl(217, 25%, 94%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+span {
+    color: hsl(218, 11%, 86%);
+    font-size: 1rem;
+    font-weight: normal;
+}
+/* headings class selector */
+.heading-1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem;
+}
+.heading-2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.3rem;
+}
+.heading-4 {
+    font-size: 2.5rem;
+    margin: 10px auto;
+}
+.heading-3, .heading-4 {
+    color: #fff;
+}
+.wrapper {
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2), 1px 1px 6px 1px rgba(0,0,0,0.2);
+    margin-top: 5%;
+    width: 70%;
+}
+.top-container {
+    background-color: #fff;
+    border-radius: 7px 7px 0 0;
+    padding: 5% 6%;
+}
+.top-container-para {
+    color:hsl(218, 22%, 67%);
+    line-height: 1.5;
+}
+.bottom-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.left-container, .right-container {
+    color: hsl(204, 43%, 93%);
+    padding: 7% 12%;
+}
+.left-container {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 7px;
+}
+.submit-btn {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 4% 5%;
+    width: 100%;
+}
+.right-container {
+    background-color: hsl(179, 56%, 50%);
+    border-bottom-right-radius: 7px;
+}
+.service {
+    list-style-type: none;
+    padding-left: 0;
+}
+.service-item {
+    line-height: 1.4;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* media queries */
+@media screen and (max-width: 400px) {
+    .wrapper {
+        width: 80%;
+    }
+    .top-container {
+        padding: 7% 12%;
+    }
+    .bottom-container {
+        grid-template-columns: 100%;
+    }
+    .left-container {
+        border-radius: 0;
+    }
+    .right-container {
+        border-bottom-left-radius: 7px;
+    }
+}
